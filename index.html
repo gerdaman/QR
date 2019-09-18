@@ -11,13 +11,25 @@
         <!-- we add detectionMode and matrixCodeType to tell AR.js to recognize barcode markers -->
         <a-scene embedded arjs='sourceType: webcam; debugUIEnabled: false; detectionMode: mono_and_matrix; matrixCodeType: 3x3;'>
 
+            <a-marker preset='Hiro'>
+     
+                <a-entity
       
-        <a-marker type='barcode' value='7'>
-            <a-box position='0 0.5 0' color="yellow"></a-box>
-        </a-marker>
+                          id="drone"
+     
+                          position="0 0 0"
+      
+                          scale="1 1 1"
+      
+                          gltf-model-next="https://raw.githubusercontent.com/gerdaman/QR/master/modelss/CesiumMan.gltf;"
+     
+                          animation-mixer>
+     
+                </a-entity>
+    
+            </a-marker>
 
-
-
+            
         <a-entity camera></a-entity>
         </a-scene>
     </body>
