@@ -19,15 +19,15 @@
             <a-box position='0 0.5 0' color="yellow"></a-box>
         </a-marker>
 
-        <a-marker id="animated-marker" type='barcode' value='6'>
-            <a-entity
-            id="drone"
-            position="0 0 0"
-            scale="1 1 1"
-            gltf-model-next="src: url(.scene.gltf);"
-            animation-mixer>
+        <a-marker preset='hiro'>
+      <a-entity
+      id="drone"
+      position="0 0 0"
+      scale="1 1 1"
+      gltf-model-next="src: url(./scene.gltf);"
+      animation-mixer>
       </a-entity>
-        </a-marker>
+    </a-marker>
 
         <a-entity camera></a-entity>
         </a-scene>
