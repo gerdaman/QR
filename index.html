@@ -15,15 +15,8 @@
             <a-asset-item id="animated-asset" src="https://raw.githubusercontent.com/gerdaman/QR/master/checkpoint.gltf"></a-asset-item>
         </a-assets>
             
-         <a-assets>
-            <a-asset-item id="animated-assett" src="https://raw.githubusercontent.com/gerdaman/QR/master/virtuaalorienteerumine%20(1).gltf"></a-asset-item>
-        </a-assets>
-        
-        <a-marker id="animated-marker" type='barcode' value='7'>
-            <a-entity
-                gltf-model="#animated-assett"
-                scale="0.00001">
-            </a-entity>
+         <a-marker type='barcode' value='7'>
+            <a-box position='0 0.5 0' color="yellow"></a-box>
         </a-marker>
        
         <a-marker id="animated-marker" type='barcode' value='6'>
