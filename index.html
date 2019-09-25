@@ -19,10 +19,13 @@
             <a-asset-item id="animated-assett" src="https://raw.githubusercontent.com/gerdaman/QR/master/virtuaalorienteerumine%20(1).gltf"></a-asset-item>
         </a-assets>
         
+        <a-assets>
+            <a-asset-item id="cat" src="https://raw.githubusercontent.com/gerdaman/QR/master/lowpolycat/cat.obj"></a-asset-item>
+        </a-assets>
+        
         <a-marker id="animated-marker" type='barcode' value='8'>
             <a-entity 
-                      obj-model=”obj: url(/path/to/nameOfFile.obj);
-                      mtl: url(/path/to/nameOfFile.mtl)”>
+                      obj-model="#cat">
             </a-entity>
         </a-marker>
             
