@@ -12,25 +12,9 @@
          <a-scene embedded arjs='sourceType: webcam; debugUIEnabled: false; detectionMode: mono_and_matrix; matrixCodeType: 3x3;'>
 
         <a-assets>
-            <a-asset-item id="animated-asset" src="https://raw.githubusercontent.com/gerdaman/QR/master/Campus.gltf"></a-asset-item>
-        </a-assets>
-             
-        <a-assets>
             <a-asset-item id="house" src="https://raw.githubusercontent.com/gerdaman/QR/master/247_House%2015_obj.obj"></a-asset-item>
-        </a-assets>      
-
-        <a-assets>
-            <a-asset-item id="checkp" src="https://github.com/gerdaman/QR/blob/master/checkpoint.obj/checkpoint.obj"></a-asset-item>
-            <a-asset-item id="checkp-mtl" src="https://raw.githubusercontent.com/gerdaman/QR/master/checkpoint.obj/checkpoint.mtl"></a-asset-item>
-        </a-assets>      
-             
-         <a-marker type='barcode' value='5'>
-            <a-entity
-                scale="0.01 0.01 0.01"
-                obj-model="obj: #checkp; mtl: #checkp-mtl">
-            </a-entity>
-        </a-marker>
-             
+        </a-assets>        
+       
         <a-marker type='barcode' value='7'>
             <a-box position='0 0.5 0' color="yellow"></a-box>
         </a-marker>
